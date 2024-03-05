@@ -1,15 +1,18 @@
-# UBB_Projects
+﻿# UBB Computer Science : University Projects
 
 Assignments and projects done for the University.
 
-* [:computer: Semester 1](Year 1/Semester 1/)
-    * [:books: Planes Game](Semester 1/Planes Game/)
-    * [:books: Hangman](Semester 1/Hangman/)
-* [:computer: Semester 2](Year 1/Semester 2/)
-    * [:books: Object Oriented Programming](Semester 2/Object Oriented Programming/)
-* [:computer: Semester 3](Year 2/Semester 1/)
-    * [:books: Advanced Programming Methods](Semester 3/APM/)
-    * [:books: Computer Networks](Semester 3/Computer Networks/)
-    * [:books: Databases](Semester 3/Databases/)
-    * [:books: Functional & logic programming](Semester 3/LPF/)
-    * [:books: Probabilities & statistics](Semester 3/Probability and Statistics/)
+## 💻 Semester 1
+- [🖥️ Planes Game](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%201/Semester%201/Planes%20Game) 
+- [🎮 Hangman](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%201/Semester%201/Hangman)
+
+## 💻 Semester 2
+- [🎮 Object Oriented Programming](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%201/Semester%202/Object%20Oriented%20Programming)
+
+## 💻 Semester 3
+- [🚀 Advanced Programming Methods](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/APM)
+- - [💡 Computer Networks](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/Computer%20Networks)
+- [🔍 Databases](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/Databases)
+- [🧠 Functional & logic programming](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/LPF/Lisp)
+- [📊 Probabilities & Statistics](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/Probability%20and%20Statistics)
+
