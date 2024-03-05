@@ -1,0 +1,5 @@
+D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/CMakeFiles/DriveConnect.dir
+D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/CMakeFiles/DriveConnect_autogen_timestamp_deps.dir
+D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/CMakeFiles/DriveConnect_autogen.dir

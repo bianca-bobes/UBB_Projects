@@ -1,0 +1,6 @@
+John,25,25,5
+Matthew,20,25,2
+Andrew,12,15,1
+Jessica,45,41,7
+Edward,21,24,4
+Alecandrut,23,25,4

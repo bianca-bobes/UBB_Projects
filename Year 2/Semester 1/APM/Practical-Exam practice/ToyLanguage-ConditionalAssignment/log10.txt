@@ -1,0 +1,450 @@
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='a', type=Ref(int)};(VarDeclStmt{name='b', type=Ref(int)};(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))))))]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=Ref(int)};(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))))), VarDeclStmt{name='a', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=Ref(int)};(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))))), VarDeclStmt{name='a', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=Ref(int)};(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))))))]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=Ref(int)};(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))))))]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))))), VarDeclStmt{name='b', type=Ref(int)}]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))))), VarDeclStmt{name='b', type=Ref(int)}]
+symTable={a=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))))]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))))]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))), VarDeclStmt{name='v', type=int}]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))), VarDeclStmt{name='v', type=int}]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))))]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(a,ValueExp{e=0});(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))))]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))), new(a,ValueExp{e=0})]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))), new(a,ValueExp{e=0})]
+symTable={a=RefValue{address=0, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0}
+
+Program State : 
+
+id = 1
+exeStack = [(new(b,ValueExp{e=0});(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))), new(b,ValueExp{e=0})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))), new(b,ValueExp{e=0})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=0, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(a,ValueExp{e=1});(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))), WriteHeap(a,ValueExp{e=1})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))), WriteHeap(a,ValueExp{e=1})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=0, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(WriteHeap(b,ValueExp{e=2});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))), WriteHeap(b,ValueExp{e=2})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))), WriteHeap(b,ValueExp{e=2})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=0}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))), ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))), ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))), (IF(RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1})THEN(v=ValueExp{e=100})ELSE(v=ValueExp{e=200}))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))), (IF(RelationalExp{exp1=ReadHeapExp(exp=VarExp{id='a'}), exp2=ReadHeapExp(exp=VarExp{id='b'}), op=1})THEN(v=ValueExp{e=100})ELSE(v=ValueExp{e=200}))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))), v=ValueExp{e=100}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))), v=ValueExp{e=100}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=0}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(print(VarExp{id='v'});(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})), print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'})), print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [(ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}};print(VarExp{id='v'}))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'}), ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'}), ConditionalAssignment{v='v', exp1=RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5}, exp2=ValueExp{e=100}, exp3=ValueExp{e=200}}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'}), (IF(RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5})THEN(v=ValueExp{e=100})ELSE(v=ValueExp{e=200}))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'}), (IF(RelationalExp{exp1=ArithExp{e1=ReadHeapExp(exp=VarExp{id='b'}), e2=ValueExp{e=2}, op=2}, exp2=ReadHeapExp(exp=VarExp{id='a'}), op=5})THEN(v=ValueExp{e=100})ELSE(v=ValueExp{e=200}))]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'}), v=ValueExp{e=200}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'}), v=ValueExp{e=200}]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=100}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=200}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = [print(VarExp{id='v'})]
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=200}
+out=[100]
+fileTable={}
+heap={1=1, 2=2}
+
+Program State : 
+
+id = 1
+exeStack = []
+symTable={a=RefValue{address=1, locationType=int}, b=RefValue{address=2, locationType=int}, v=200}
+out=[100, 200]
+fileTable={}
+heap={1=1, 2=2}
+

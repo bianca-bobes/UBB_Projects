@@ -1,0 +1,4 @@
+Daniel|0|1|14|Teiului;Morcovului;Cabanosului|
+Catalin|3|5|20|Bananei;Claudiu;Parmezanului|
+Francis|10|10|100|Maimutei;Bombardierului|
+Petrica|25|50|30|Salamului;Minunilor|

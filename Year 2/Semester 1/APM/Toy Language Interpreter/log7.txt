@@ -1,0 +1,483 @@
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(Ref(int) v;(new(v, ValueExp{e=20});(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))))))
+}
+, symTable=MyDictionary{
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(v, ValueExp{e=20});(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))))
+	Ref(int) v
+}
+, symTable=MyDictionary{
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(v, ValueExp{e=20});(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))))
+	Ref(int) v
+}
+, symTable=MyDictionary{
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(v, ValueExp{e=20});(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))))
+}
+, symTable=MyDictionary{
+	v: RefValue{address=0, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(v, ValueExp{e=20});(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))))
+}
+, symTable=MyDictionary{
+	v: RefValue{address=0, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))))
+	new(v, ValueExp{e=20})
+}
+, symTable=MyDictionary{
+	v: RefValue{address=0, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))))
+	new(v, ValueExp{e=20})
+}
+, symTable=MyDictionary{
+	v: RefValue{address=0, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))))
+}
+, symTable=MyDictionary{
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(Ref(Ref(int)) a;(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))))
+}
+, symTable=MyDictionary{
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))
+	Ref(Ref(int)) a
+}
+, symTable=MyDictionary{
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))
+	Ref(Ref(int)) a
+}
+, symTable=MyDictionary{
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))
+}
+, symTable=MyDictionary{
+	a: RefValue{address=0, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(new(a, VarExp{id='v'});(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})))
+}
+, symTable=MyDictionary{
+	a: RefValue{address=0, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))
+	new(a, VarExp{id='v'})
+}
+, symTable=MyDictionary{
+	a: RefValue{address=0, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))
+	new(a, VarExp{id='v'})
+}
+, symTable=MyDictionary{
+	a: RefValue{address=0, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))
+}
+, symTable=MyDictionary{
+	a: RefValue{address=2, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+	2: RefValue{address=1, locationType=int}
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	(print(read heap expression(VarExp{id='v'}));print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1}))
+}
+, symTable=MyDictionary{
+	a: RefValue{address=2, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+	2: RefValue{address=1, locationType=int}
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})
+	print(read heap expression(VarExp{id='v'}))
+}
+, symTable=MyDictionary{
+	a: RefValue{address=2, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+	2: RefValue{address=1, locationType=int}
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})
+	print(read heap expression(VarExp{id='v'}))
+}
+, symTable=MyDictionary{
+	a: RefValue{address=2, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+	2: RefValue{address=1, locationType=int}
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})
+}
+, symTable=MyDictionary{
+	a: RefValue{address=2, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+	20
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+	2: RefValue{address=1, locationType=int}
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+	print(ArithExp{e1=read heap expression(read heap expression(VarExp{id='a'})), e2=ValueExp{e=5}, op=1})
+}
+, symTable=MyDictionary{
+	a: RefValue{address=2, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+	20
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+	2: RefValue{address=1, locationType=int}
+}
+}
+
+******************************
+
+
+******************************
+Id: 7
+PrgState{
+exeStack=MyStack{
+}
+, symTable=MyDictionary{
+	a: RefValue{address=2, locationType=Ref(int)}
+	v: RefValue{address=1, locationType=int}
+}
+, out=MyList{
+	20
+	25
+}
+, fileTable=MyFileTable{
+}
+, heap=MyHeap{
+	1: 20
+	2: RefValue{address=1, locationType=int}
+}
+}
+
+******************************
+
+

@@ -1,0 +1,900 @@
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v1', type=Ref(int)};(VarDeclStmt{name='cnt', type=int};(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))))))]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='cnt', type=int};(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))))), VarDeclStmt{name='v1', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='cnt', type=int};(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))))), VarDeclStmt{name='v1', type=Ref(int)}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='cnt', type=int};(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))))))]
+symTable={v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='cnt', type=int};(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))))))]
+symTable={v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))))), VarDeclStmt{name='cnt', type=int}]
+symTable={v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))))), VarDeclStmt{name='cnt', type=int}]
+symTable={v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))))]
+symTable={cnt=0, v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(new(v1,ValueExp{e=1});(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))))]
+symTable={cnt=0, v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))), new(v1,ValueExp{e=1})]
+symTable={cnt=0, v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))), new(v1,ValueExp{e=1})]
+symTable={cnt=0, v1=RefValue{address=0, locationType=int}}
+out=[]
+fileTable={}
+heap={}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))))]
+symTable={cnt=0, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})};(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))))]
+symTable={cnt=0, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))), CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})}]
+symTable={cnt=0, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))), CreateSemaphore{v='cnt', expression=ReadHeapExp(exp=VarExp{id='v1'})}]
+symTable={cnt=0, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))));(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))), fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))), fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 2
+exeStack = [(Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))));(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 2
+exeStack = [(Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})), fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 2
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})), fork((Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 2
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(Acquire{var='cnt'};(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(Acquire{var='cnt'};(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}), WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}), WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=1}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [Release{var='cnt'}, print(ReadHeapExp(exp=VarExp{id='v1'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [Release{var='cnt'}, print(ReadHeapExp(exp=VarExp{id='v1'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [Release{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 2
+exeStack = [Release{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[2]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 2
+exeStack = []
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'}), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 1
+exeStack = [(print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2});Release{var='cnt'})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 1
+exeStack = [Release{var='cnt'}, print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 1
+exeStack = [Release{var='cnt'}, print(ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=1}, op=2})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 1
+exeStack = [Release{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 1
+exeStack = [Release{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))), Acquire{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[1]}
+
+Program State : 
+
+id = 1
+exeStack = []
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3});(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})), WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})), WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=10}, op=3})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=10}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=100}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3});(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=100}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}), WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=100}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'}), WriteHeap(v1,ArithExp{e1=ReadHeapExp(exp=VarExp{id='v1'}), e2=ValueExp{e=2}, op=3})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=100}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=200}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [(print(ReadHeapExp(exp=VarExp{id='v1'}));Release{var='cnt'})]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=200}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [Release{var='cnt'}, print(ReadHeapExp(exp=VarExp{id='v1'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=200}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [Release{var='cnt'}, print(ReadHeapExp(exp=VarExp{id='v1'}))]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9]
+fileTable={}
+heap={1=200}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [Release{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9, 200]
+fileTable={}
+heap={1=200}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = [Release{var='cnt'}]
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9, 200]
+fileTable={}
+heap={1=200}
+semaphoreTable{1=1=[3]}
+
+Program State : 
+
+id = 3
+exeStack = []
+symTable={cnt=1, v1=RefValue{address=1, locationType=int}}
+out=[10, 9, 200]
+fileTable={}
+heap={1=200}
+semaphoreTable{1=1=[]}
+

@@ -1,0 +1,63 @@
+# ninja log v5
+5	173	7096864875938736	DriveConnect_autogen/timestamp	6faecf2f8b07b109
+5	173	7096864875938736	DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+174	1084	7096750239228162	CMakeFiles/DriveConnect.dir/Subject.cpp.obj	59ad0409c31b35fc
+5	173	7096864875938736	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/timestamp	6faecf2f8b07b109
+5	173	7096864875938736	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+254	352	7096502219070568	CMakeFiles/DriveConnect.dir/Observer.cpp.obj	57aab1414c4b51e3
+198	1041	7096505876569069	CMakeFiles/DriveConnect.dir/Driver.cpp.obj	f90218f95adf0f1c
+744	4336	7096858979983948	CMakeFiles/DriveConnect.dir/DriveConnect_autogen/mocs_compilation.cpp.obj	be8f1acf5266d4cb
+680	1723	7096842462607162	CMakeFiles/DriveConnect.dir/Report.cpp.obj	e9a028488ef311bc
+686	1921	7096842464598751	CMakeFiles/DriveConnect.dir/DriverRepo.cpp.obj	25237998b7832c3
+674	1942	7096842464804458	CMakeFiles/DriveConnect.dir/ReportRepo.cpp.obj	a8edb19d8184dd81
+738	1915	7096852331922588	CMakeFiles/DriveConnect.dir/Service.cpp.obj	e30bb2e67afcd018
+191	3300	7096859161361483	CMakeFiles/DriveConnect.dir/main.cpp.obj	57d72f49331b0a2f
+150	849	7096506302041321	CMakeFiles/DriveConnect.dir/Utils.cpp.obj	e9da516fca3f7f0e
+2	811	7096854438707574	build.ninja	a2afcd8779ec3e57
+2699	3319	7096864905369671	DriveConnect.exe	36b624243cef8dae
+745	4898	7096852361729383	CMakeFiles/DriveConnect.dir/driverwindow.cpp.obj	92ab7215dd7cfa19
+682	1524	7096723233625176	CMakeFiles/DriveConnect.dir/DriverMessage.cpp.obj	39948b43b5c384e
+179	1151	7096750239905183	CMakeFiles/DriveConnect.dir/ChatSession.cpp.obj	35890754825c28cf
+183	242	7096853526557039	CMakeFiles/DriveConnect.dir/mapwindow.cpp.obj	886047fab6ba26ac
+178	2699	7096864901203335	CMakeFiles/DriveConnect.dir/mappingwindow.cpp.obj	8b0b422915072e10
+8	747	7096868590715314	DriveConnect_autogen/timestamp	6faecf2f8b07b109
+8	747	7096868590715314	DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+8	747	7096868590715314	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/timestamp	6faecf2f8b07b109
+8	747	7096868590715314	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+759	2039	7096868604315112	CMakeFiles/DriveConnect.dir/ReportRepo.cpp.obj	a8edb19d8184dd81
+765	2063	7096868604573106	CMakeFiles/DriveConnect.dir/Service.cpp.obj	e30bb2e67afcd018
+779	4206	7096868625999127	CMakeFiles/DriveConnect.dir/mappingwindow.cpp.obj	8b0b422915072e10
+753	4547	7096868629418911	CMakeFiles/DriveConnect.dir/DriveConnect_autogen/mocs_compilation.cpp.obj	be8f1acf5266d4cb
+747	4688	7096868630813461	CMakeFiles/DriveConnect.dir/main.cpp.obj	57d72f49331b0a2f
+771	5265	7096868636548471	CMakeFiles/DriveConnect.dir/driverwindow.cpp.obj	92ab7215dd7cfa19
+5265	5930	7096868641072422	DriveConnect.exe	36b624243cef8dae
+6	173	7096871318742611	DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	173	7096871318742611	DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+6	173	7096871318742611	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	173	7096871318742611	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+177	2928	7096871346302650	CMakeFiles/DriveConnect.dir/mappingwindow.cpp.obj	8b0b422915072e10
+2928	3552	7096871350491314	DriveConnect.exe	36b624243cef8dae
+6	174	7096871626727737	DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	174	7096871626727737	DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+6	174	7096871626727737	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	174	7096871626727737	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+179	2825	7096871653255408	CMakeFiles/DriveConnect.dir/mappingwindow.cpp.obj	8b0b422915072e10
+2825	3452	7096871657444982	DriveConnect.exe	36b624243cef8dae
+6	201	7096871851781328	DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	201	7096871851781328	DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+6	201	7096871851781328	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	201	7096871851781328	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+207	2958	7096871879361192	CMakeFiles/DriveConnect.dir/mappingwindow.cpp.obj	8b0b422915072e10
+2958	3638	7096871883931955	DriveConnect.exe	36b624243cef8dae
+6	168	7096883905502287	DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	168	7096883905502287	DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+6	168	7096883905502287	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/timestamp	6faecf2f8b07b109
+6	168	7096883905502287	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+172	1041	7096883914283637	CMakeFiles/DriveConnect.dir/ChatSession.cpp.obj	35890754825c28cf
+1041	1713	7096883918871988	DriveConnect.exe	36b624243cef8dae
+5	155	7096884096359575	DriveConnect_autogen/timestamp	6faecf2f8b07b109
+5	155	7096884096359575	DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+5	155	7096884096359575	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/timestamp	6faecf2f8b07b109
+5	155	7096884096359575	D:/UBB/Semester 2/OOP/DriveConnect/cmake-build-debug/DriveConnect_autogen/mocs_compilation.cpp	6faecf2f8b07b109
+158	2674	7096884121576313	CMakeFiles/DriveConnect.dir/mappingwindow.cpp.obj	8b0b422915072e10
+2675	3153	7096884124787331	DriveConnect.exe	36b624243cef8dae

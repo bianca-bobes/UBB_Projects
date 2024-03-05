@@ -1,0 +1,441 @@
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='v', type=int};(v=ValueExp{e=10};(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})))))]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=10};(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})))), VarDeclStmt{name='v', type=int}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=10};(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})))), VarDeclStmt{name='v', type=int}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=10};(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}))))]
+symTable={v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(v=ValueExp{e=10};(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}))))]
+symTable={v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}))), v=ValueExp{e=10}]
+symTable={v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}))), v=ValueExp{e=10}]
+symTable={v=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))));(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})), fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})), fork((v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'})))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(sleep(10);print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'})))]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(10)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(10)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'})), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(9)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))]
+symTable={v=9}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(9)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [(v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2};print(VarExp{id='v'}))]
+symTable={v=9}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(8)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
+symTable={v=9}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(8)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
+symTable={v=9}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(7)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [print(VarExp{id='v'})]
+symTable={v=8}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(7)]
+symTable={v=10}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = [print(VarExp{id='v'})]
+symTable={v=8}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(6)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 2
+exeStack = []
+symTable={v=8}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(6)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(5)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(5)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(4)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(4)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(3)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(3)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(2)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(2)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(1)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(1)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(0)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}), sleep(0)]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3})]
+symTable={v=10}
+out=[8]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = []
+symTable={v=10}
+out=[8, 100]
+fileTable={}
+heap={}
+

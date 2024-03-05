@@ -1,0 +1,342 @@
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='a', type=int};(VarDeclStmt{name='b', type=int};(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))))))]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=int};(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))))), VarDeclStmt{name='a', type=int}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=int};(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))))), VarDeclStmt{name='a', type=int}]
+symTable={}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=int};(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))))))]
+symTable={a=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='b', type=int};(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))))))]
+symTable={a=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))))), VarDeclStmt{name='b', type=int}]
+symTable={a=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))))), VarDeclStmt{name='b', type=int}]
+symTable={a=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))))]
+symTable={a=0, b=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(VarDeclStmt{name='c', type=int};(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))))]
+symTable={a=0, b=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))), VarDeclStmt{name='c', type=int}]
+symTable={a=0, b=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))), VarDeclStmt{name='c', type=int}]
+symTable={a=0, b=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))))]
+symTable={a=0, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(a=ValueExp{e=1};(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))))]
+symTable={a=0, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))), a=ValueExp{e=1}]
+symTable={a=0, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))), a=ValueExp{e=1}]
+symTable={a=0, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))]
+symTable={a=1, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(b=ValueExp{e=2};(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))))]
+symTable={a=1, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))), b=ValueExp{e=2}]
+symTable={a=1, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))), b=ValueExp{e=2}]
+symTable={a=1, b=0, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))]
+symTable={a=1, b=2, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(c=ValueExp{e=5};(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})))]
+symTable={a=1, b=2, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})), c=ValueExp{e=5}]
+symTable={a=1, b=2, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300})), c=ValueExp{e=5}]
+symTable={a=1, b=2, c=0}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [(Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}));print(ValueExp{e=300}))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), Switch(ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}) (case ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}: (print(VarExp{id='a'});print(VarExp{id='b'}))) (case ValueExp{e=10}: (print(ValueExp{e=100});print(ValueExp{e=200}))) (default: print(ValueExp{e=300}))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), (IF(RelationalExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, op=3})THEN((print(VarExp{id='a'});print(VarExp{id='b'})))ELSE((IF(RelationalExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ValueExp{e=10}, op=3})THEN((print(ValueExp{e=100});print(ValueExp{e=200})))ELSE(print(ValueExp{e=300})))))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), (IF(RelationalExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, op=3})THEN((print(VarExp{id='a'});print(VarExp{id='b'})))ELSE((IF(RelationalExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ValueExp{e=10}, op=3})THEN((print(ValueExp{e=100});print(ValueExp{e=200})))ELSE(print(ValueExp{e=300})))))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), (print(VarExp{id='a'});print(VarExp{id='b'}))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), (print(VarExp{id='a'});print(VarExp{id='b'}))]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), print(VarExp{id='b'}), print(VarExp{id='a'})]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), print(VarExp{id='b'}), print(VarExp{id='a'})]
+symTable={a=1, b=2, c=5}
+out=[]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), print(VarExp{id='b'})]
+symTable={a=1, b=2, c=5}
+out=[1]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300}), print(VarExp{id='b'})]
+symTable={a=1, b=2, c=5}
+out=[1]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300})]
+symTable={a=1, b=2, c=5}
+out=[1, 2]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = [print(ValueExp{e=300})]
+symTable={a=1, b=2, c=5}
+out=[1, 2]
+fileTable={}
+heap={}
+
+Program State : 
+
+id = 1
+exeStack = []
+symTable={a=1, b=2, c=5}
+out=[1, 2, 300]
+fileTable={}
+heap={}
+
