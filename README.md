@@ -11,7 +11,7 @@ Assignments and projects done for the University.
 
 ## 💻 Semester 3
 - [🚀 Advanced Programming Methods](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/APM)
-- - [💡 Computer Networks](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/Computer%20Networks)
+- [💡 Computer Networks](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/Computer%20Networks)
 - [🔍 Databases](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/Databases)
 - [🧠 Functional & logic programming](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/LPF/Lisp)
 - [📊 Probabilities & Statistics](https://github.com/bianca-bobes/UBB_Projects/tree/main/Year%202/Semester%201/Probability%20and%20Statistics)
