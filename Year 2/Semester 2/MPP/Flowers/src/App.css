@@ -1,23 +1,22 @@
 /* App.css */
 
-
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../src/images/body.png");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: auto; /* Prevents stretching */
-    
+    background-color:#d5a2d7;
+   
 }
+
 .app-container {
-    padding: 20px;
-    
+    width: 100%; /* Ensure the container fills the entire width */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
 }
 
 .navigation-container {
     margin-bottom: 20px;
-    align-self:center;
+    align-self: center;
+    width: 100%;
 }
 
 .flower-grid-container {

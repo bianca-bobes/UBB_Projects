@@ -1,5 +1,3 @@
-// App.tsx
-
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import NavigationBar from './components/NavigationBar/NavigationBar';
