@@ -1,0 +1,50 @@
+/* ADDflower.css */
+
+.add-flower-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #7e57c2;
+    border-radius: 5px;
+    background-color: #f3e5f5; /* Light purple background */
+}
+
+.title {
+    text-align: center;
+    color: #512da8; /* Dark purple title */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #673ab7; /* Purple label */
+    font-size: 1.2em;
+}
+
+.form-field {
+    width: calc(100% - 22px); /* Adjusting for input padding and border */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b39ddb; /* Light purple border */
+    border-radius: 5px;
+    margin: 0; /* Reset margin */
+}
+
+.button {
+    display: block;
+    width: calc(100% - 22px); /* Adjusting for button padding */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #9c27b0; /* Dark purple button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background-color: #7b1fa2; /* Darker hover color */
+    }
