@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './UpdateFlower.css';
 
 interface UpdateFlowerProps {
-    onUpdate: (flowerData: any) => void;
+    onUpdate: (popularName: string, latinName: string, symbolicMeaning: string, color: string, season: string) => void;
 }
+
+
 
 const UpdateFlower: React.FC<UpdateFlowerProps> = ({ onUpdate }) => {
     const [showForm, setShowForm] = useState(false);
@@ -33,7 +35,7 @@ const UpdateFlower: React.FC<UpdateFlowerProps> = ({ onUpdate }) => {
             season: season
         };
         // Call the onUpdate function passed from the parent component
-        onUpdate(flowerData);
+        onUpdate(popularName, latinName, symbolicMeaning, color, season);
         // Clear form fields after submission
         setPopularName('');
         setLatinName('');

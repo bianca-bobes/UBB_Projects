@@ -8,12 +8,11 @@ import DeleteFlower from './components/DeleteFlower/DeleteFlower';
 import UpdateFlower from './components/UpdateFlower/UpdateFlower';
 import { Flower } from './domain/Flower';
 import { Repo } from './repository/Repository';
-
 const repository = new Repo();
 const flowersPerPage = 3;
 
 function App() {
-    const [allFlowers, setAllFlowers] = useState(repository.getAllVisibleFlowers());
+    const [allFlowers, setAllFlowers] = useState<Flower[]>(repository.getAllVisibleFlowers());
     const [flowers, setFlowers] = useState<Flower[]>([]);
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
@@ -47,6 +46,35 @@ function App() {
         }
     };
 
+    const handleAddFlower = (popularName: string, latinName: string, symbolicMeaning: string, color: string, season: string) => {
+        const existingFlower = allFlowers.find(f => f.popular_name === popularName);
+        if (!existingFlower) {
+            repository.addFlower(new Flower(0, popularName, latinName, symbolicMeaning, color, season, true));
+            setAllFlowers(repository.getAllVisibleFlowers());
+            setShowAddForm(false);
+        } else {
+            alert('There is a flower with that name');
+        }
+    };
+
+    const handleDeleteFlower = (name: string) => {
+        repository.deleteFlower(name);
+        setAllFlowers(repository.getAllVisibleFlowers());
+        setShowDeleteForm(false);
+    };
+
+    const handleUpdateFlower = (popularName: string, latinName: string, symbolicMeaning: string, color: string, season: string) => {
+        const existingFlower = allFlowers.find(f => f.popular_name === popularName);
+        if (existingFlower) {
+            const updatedFlower = new Flower(existingFlower.id, popularName, latinName, symbolicMeaning, color, season, true);
+            repository.updateFlower(popularName, updatedFlower);
+            setAllFlowers(repository.getAllVisibleFlowers());
+            setShowUpdateForm(false);
+        } else {
+            alert('No flower with that name');
+        }
+    };
+
     const handleSort = () => {
         // Toggle the sort direction between 'asc' and 'desc'
         const newSortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
@@ -66,29 +94,28 @@ function App() {
         setCurrentPage(1);
     };
 
-    return (
-        <div className="app-container">
-            <div className="navigation-container">
-                <NavigationBar
-                    onAdd={() => setShowAddForm(!showAddForm)}
-                    onDelete={() => setShowDeleteForm(!showDeleteForm)}
-                    onUpdate={() => setShowUpdateForm(!showUpdateForm)}
-                    onSort={handleSort}
-                    onNextPage={handleNextPage}
-                    onPrevPage={handlePreviousPage}
-                />
+        return (
+            <div className="app-container">
+                <div className="navigation-container">
+                    <NavigationBar
+                        onAdd={() => setShowAddForm(!showAddForm)}
+                        onDelete={() => setShowDeleteForm(!showDeleteForm)}
+                        onUpdate={() => setShowUpdateForm(!showUpdateForm)}
+                        onSort={handleSort}
+                        onNextPage={handleNextPage}
+                        onPrevPage={handlePreviousPage}
+                    />
+                </div>
+                <div className="flower-grid-container">
+                    <FlowerGrid flowers={flowers} />
+                </div>
+                <div className="season-chart-container">
+                    <SeasonChart flowers={allFlowers} />
+                </div>
+                {showAddForm && <AddFlower onAdd={handleAddFlower} />}
+                {showDeleteForm && <DeleteFlower onDelete={handleDeleteFlower} />}
+                {showUpdateForm && <UpdateFlower onUpdate={handleUpdateFlower} />}
             </div>
-            <div className="flower-grid-container">
-                <FlowerGrid flowers={flowers} />
-            </div>
-            <div className="season-chart-container">
-                <SeasonChart flowers={allFlowers} />
-            </div>
-            {showAddForm && <AddFlower onAdd={() => setShowAddForm(false)} />}
-            {showDeleteForm && <DeleteFlower onDelete={() => setShowDeleteForm(false)} />}
-            {showUpdateForm && <UpdateFlower onUpdate={() => setShowUpdateForm(false)} />}
-        </div>
-    );
-}
-
-export default App;
+        );
+    }
+    export default App;

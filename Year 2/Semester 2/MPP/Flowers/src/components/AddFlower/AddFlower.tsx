@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './AddFlower.css';
 
 interface AddFlowerProps {
-    onAdd: (flowerData: any) => void;
+    onAdd: (popularName: string, latinName: string, symbolicMeaning: string, color: string, season: string) => void;
 }
 
 const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
@@ -33,7 +33,7 @@ const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
             season: season
         };
         // Call the onAdd function passed from the parent component
-        onAdd(flowerData);
+        onAdd(popularName, latinName, symbolicMeaning, color, season);
         // Clear form fields after submission
         setPopularName('');
         setLatinName('');
