@@ -1,19 +1,24 @@
+/* NavigationBar.css */
+
 .navigation-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #6a0dad;
+    background-color: #c8a2c8; /* Lilac color */
     color: #fff;
+    width: 100%; /* Set width to 100% */
 }
 
     .navigation-bar h1 {
         margin: 0;
+        font-size: 24px; /* Smaller font size */
+       
     }
 
     .navigation-bar button {
         padding: 8px 16px;
-        background-color: #4a0d6a;
+        background-color: #c8a2c8; /* Lilac color */
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -22,5 +27,5 @@
     }
 
         .navigation-bar button:hover {
-            background-color: #2a0d3a;
+            background-color: #a883a8; /* Darker lilac color on hover */
         }

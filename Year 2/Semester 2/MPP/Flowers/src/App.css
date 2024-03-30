@@ -1,8 +1,18 @@
 /* App.css */
 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../src/images/body.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto; /* Prevents stretching */
+    
+}
 .app-container {
     padding: 20px;
-    background-image: url("images/body.png");
+    
 }
 
 .navigation-container {
