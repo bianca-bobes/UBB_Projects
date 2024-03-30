@@ -24,10 +24,16 @@ const DeleteFlower: React.FC<DeleteFlowerProps> = ({ onDelete }) => {
         setShowForm(false);
     };
 
+    const toggleFormVisibility = () => {
+        setShowForm(!showForm);
+    };
+
     return (
         <>
-            <div className={`delete-flower-overlay ${showForm ? 'show' : ''}`} onClick={() => setShowForm(false)}></div>
-            <div className={`delete-flower-form ${showForm ? 'show' : ''}`}>
+            {showForm && (
+                <div className="delete-flower-overlay" onClick={toggleFormVisibility}></div>
+            )}
+            <div className={`delete-flower-form ${showForm ? 'active' : ''}`}>
                 <h2>Delete Flower</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -37,7 +43,7 @@ const DeleteFlower: React.FC<DeleteFlowerProps> = ({ onDelete }) => {
                     <button type="submit">Delete</button>
                 </form>
             </div>
-            <button onClick={() => setShowForm(!showForm)}>Delete Flower</button>
+            <button onClick={toggleFormVisibility}>Delete Flower</button>
         </>
     );
 };

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './UpdateFlower.css';
+
 interface UpdateFlowerProps {
     onUpdate: (flowerData: any) => void;
 }
-const UpdateFlower: React.FC<UpdateFlowerProps>= ({ onUpdate }) => {
+
+const UpdateFlower: React.FC<UpdateFlowerProps> = ({ onUpdate }) => {
     const [showForm, setShowForm] = useState(false);
     const [popularName, setPopularName] = useState('');
     const [latinName, setLatinName] = useState('');
@@ -11,11 +13,15 @@ const UpdateFlower: React.FC<UpdateFlowerProps>= ({ onUpdate }) => {
     const [color, setColor] = useState('');
     const [season, setSeason] = useState('');
 
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Validate form fields
         if (!popularName || !latinName || !symbolicMeaning || !color || !season) {
             alert('Please fill out all fields.');
+            return;
+        }
+        if (!['Spring', 'Summer', 'Autumn', 'Winter'].includes(season)) {
+            alert('Season must be one of: Spring, Summer, Autumn, Winter');
             return;
         }
         // Construct flower data
@@ -38,10 +44,16 @@ const UpdateFlower: React.FC<UpdateFlowerProps>= ({ onUpdate }) => {
         setShowForm(false);
     };
 
+    const toggleFormVisibility = () => {
+        setShowForm(!showForm);
+    };
+
     return (
         <>
-            <div className={`update-flower-overlay ${showForm ? 'show' : ''}`} onClick={() => setShowForm(false)}></div>
-            <div className={`update-flower-form ${showForm ? 'show' : ''}`}>
+            {showForm && (
+                <div className="add-flower-overlay" onClick={toggleFormVisibility}></div>
+            )}
+            <div className={`add-flower-form ${showForm ? 'active' : ''}`}>
                 <h2>Update Flower</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -67,7 +79,7 @@ const UpdateFlower: React.FC<UpdateFlowerProps>= ({ onUpdate }) => {
                     <button type="submit">Update</button>
                 </form>
             </div>
-            <button onClick={() => setShowForm(!showForm)}>Update</button>
+            <button onClick={toggleFormVisibility}>Update Flower</button>
         </>
     );
 };

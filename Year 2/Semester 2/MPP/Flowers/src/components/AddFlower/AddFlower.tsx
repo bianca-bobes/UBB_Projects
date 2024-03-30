@@ -40,14 +40,18 @@ const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
         setSymbolicMeaning('');
         setColor('');
         setSeason('');
-        // Hide the form after submission
-        setShowForm(false);
+    };
+
+    const toggleFormVisibility = () => {
+        setShowForm(!showForm);
     };
 
     return (
         <>
-            <div className={`add-flower-overlay ${showForm ? 'show' : ''}`} onClick={() => setShowForm(false)}></div>
-            <div className={`add-flower-form ${showForm ? 'show' : ''}`}>
+            {showForm && (
+                <div className="add-flower-overlay" onClick={toggleFormVisibility}></div>
+            )}
+            <div className={`add-flower-form ${showForm ? 'active' : ''}`}>
                 <h2>Add Flower</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -73,7 +77,7 @@ const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
                     <button type="submit">Add</button>
                 </form>
             </div>
-            <button onClick={() => setShowForm(!showForm)}>Add Flower</button>
+            <button onClick={toggleFormVisibility}>Add Flower</button>
         </>
     );
 };

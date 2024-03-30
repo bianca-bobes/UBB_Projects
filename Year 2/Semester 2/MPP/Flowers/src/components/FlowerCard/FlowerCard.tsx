@@ -1,6 +1,7 @@
 import React from 'react';
 import './FlowerCard.css';
 import { Flower } from '../../domain/Flower';
+import emptyImage from '../../images/empty.png'
 
 interface FlowerCardProps {
     flower: Flower;
@@ -10,7 +11,7 @@ const FlowerCard: React.FC<FlowerCardProps> = ({ flower }) => {
     return (
         <div className="flower-card">
             <img
-                src={`/images/${flower.image || 'empty.png'}`}
+                src={flower.image ? `../../images/${flower.image}` : emptyImage}
                 alt={flower.popular_name}
                 className="flower-image"
             />
