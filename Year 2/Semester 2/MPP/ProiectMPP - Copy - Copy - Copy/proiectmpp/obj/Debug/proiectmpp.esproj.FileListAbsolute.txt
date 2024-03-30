@@ -2,3 +2,4 @@ C:\faculta\Sem4\MPP\ProiectMPP\ProiectMPP\obj\Debug\proiectmpp.esproj.CoreCompil
 C:\faculta\Sem4\MPP\ProiectMPP - Copy\ProiectMPP\obj\Debug\proiectmpp.esproj.CoreCompileInputs.cache
 C:\faculta\Sem4\MPP\ProiectMPP - Copy - Copy\ProiectMPP\obj\Debug\proiectmpp.esproj.CoreCompileInputs.cache
 C:\faculta\Sem4\MPP\ProiectMPP - Copy - Copy - Copy\ProiectMPP\obj\Debug\proiectmpp.esproj.CoreCompileInputs.cache
+C:\Users\biabo\Desktop\UBB_Projects\Year 2\Semester 2\MPP\ProiectMPP - Copy - Copy - Copy\ProiectMPP\obj\Debug\proiectmpp.esproj.CoreCompileInputs.cache

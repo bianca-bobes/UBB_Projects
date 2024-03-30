@@ -77,6 +77,29 @@ function App() {
         setShowAddForm(false);
         setShowDeleteForm(false);
     };
+    const handleAddFlower = (flower: flower) => {
+        repository.addFlower(flower);
+        setAllFlowers(repository.getAllVisibleFlowers());
+        setCurrentPage(1); // Reset to first page after adding a flower
+    };
+
+    const handleDeleteFlower = (name: string) => {
+        repository.deleteFlower(name);
+        setAllFlowers(repository.getAllVisibleFlowers());
+    };
+
+    const handleUpdateFlower = (popularName: string, latinName: string, symbolicMeaning: string, color: string, season: string) => {
+        const existingFlower = allFlowers.find(f => f.popular_name === popularName);
+        if (existingFlower) {
+            const updatedFlower = new flower(existingFlower.id, popularName, latinName, symbolicMeaning, color, season, true);
+            repository.updateFlower(popularName, updatedFlower);
+            setAllFlowers(repository.getAllVisibleFlowers());
+        } else {
+            alert('No flower with that name');
+        }
+    };
+
+
 
     const totalPages = Math.ceil(allFlowers.length / flowersPerPage);
 

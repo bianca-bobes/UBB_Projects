@@ -7,10 +7,13 @@ interface NavigationBarProps {
     onSort: () => void;
     onPreviousPage: () => void;
     onNextPage: () => void;
-    onToggleAddForm: () => void; // Add this line
-    onToggleDeleteForm: () => void; // Add this line
-    onToggleUpdateForm: () => void; // Add this line
+    onToggleAddForm: () => void;
+    onToggleDeleteForm: () => void;
+    onToggleUpdateForm: () => void;
+    currentPage: number;
+    totalPages: number;
 }
+
 
 const NavigationBar: React.FC<NavigationBarProps> = ({ onSort, onPreviousPage, onNextPage, onToggleAddForm, onToggleDeleteForm, onToggleUpdateForm }) => {
     const [selectedAction, setSelectedAction] = useState<string | null>(null);
