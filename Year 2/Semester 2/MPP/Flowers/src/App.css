@@ -1,0 +1,22 @@
+/* App.css */
+
+.app-container {
+    padding: 20px;
+    background-image: url("images/body.png");
+}
+
+.navigation-container {
+    margin-bottom: 20px;
+    align-self:center;
+}
+
+.flower-grid-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.season-chart-container {
+    display: flex;
+    justify-content: center;
+}

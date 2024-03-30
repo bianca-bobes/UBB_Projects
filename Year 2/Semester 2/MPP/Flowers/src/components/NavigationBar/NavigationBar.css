@@ -1,0 +1,26 @@
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: #fff;
+}
+
+    .navigation-bar h1 {
+        margin: 0;
+    }
+
+    .navigation-bar button {
+        padding: 8px 16px;
+        background-color: #4a0d6a;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .navigation-bar button:hover {
+            background-color: #2a0d3a;
+        }

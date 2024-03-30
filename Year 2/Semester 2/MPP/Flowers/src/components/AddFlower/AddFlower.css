@@ -1,0 +1,64 @@
+.add-flower-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 0, 128, 0.5); /* Purple background color with opacity */
+    z-index: 998; /* Lower than the form */
+    display: none;
+}
+
+.add-flower-form.active {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999; /* Higher than the overlay */
+}
+
+.add-flower-form h2 {
+    margin-bottom: 10px;
+    color: #800080; /* Purple text color */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #800080; /* Purple text color */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #800080; /* Purple border color */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+    .form-group input:focus {
+        outline: none;
+        border-color: #4b0082; /* Darker purple border color on focus */
+    }
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #800080; /* Purple background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #4b0082; /* Darker purple background color on hover */
+    }

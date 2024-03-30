@@ -1,0 +1,53 @@
+.flower-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.flower-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.flower-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+    .flower-info:hover {
+        opacity: 1; /* Show on hover */
+    }
+
+    .flower-info h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .flower-info p {
+        margin: 5px 0;
+        font-size: 1rem;
+        color: #666;
+    }

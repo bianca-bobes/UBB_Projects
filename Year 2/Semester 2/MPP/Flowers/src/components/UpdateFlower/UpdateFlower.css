@@ -1,0 +1,63 @@
+.update-flower-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1; /* Ensure the overlay is behind the form */
+    display: none; /* Initially hidden */
+}
+
+    .update-flower-overlay.show {
+        display: block; /* Show the overlay when .show class is applied */
+    }
+
+.update-flower-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2; /* Ensure the form is above the overlay */
+    display: none; /* Initially hidden */
+}
+
+    .update-flower-form.show {
+        display: block; /* Show the form when .show class is applied */
+    }
+
+    .update-flower-form h2 {
+        margin-top: 0;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
