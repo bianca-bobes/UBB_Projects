@@ -1,0 +1,6 @@
+.flower-grid {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping to create multiple rows */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add some space between items */
+}

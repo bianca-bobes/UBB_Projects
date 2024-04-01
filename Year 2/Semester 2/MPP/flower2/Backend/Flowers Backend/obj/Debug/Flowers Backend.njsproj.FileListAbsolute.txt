@@ -1,0 +1,3 @@
+C:\faculta\Sem4\MPP\Flowers Backend\Flowers Backend\obj\Debug\Flowers Backend.njsproj.AssemblyReference.cache
+C:\faculta\Sem4\MPP\Flowers Backend\Flowers Backend\obj\Debug\Flowers Backend.njsproj.CoreCompileInputs.cache
+C:\faculta\Sem4\MPP\Flowers Backend\Flowers Backend\bin\Microsoft.NodejsTools.WebRole.dll
