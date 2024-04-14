@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\flowercard\\flowercard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\flowercard\\flowercard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\flowergrid\\flowergrid.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\flowergrid\\flowergrid.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\addflower\\addflower.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\addflower\\addflower.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\seasonchart\\seasonchart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\seasonchart\\seasonchart.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\updateflower\\updateflower.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\updateflower\\updateflower.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\deleteflower\\deleteflower.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\deleteflower\\deleteflower.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\navigationbar\\navigationbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\navigationbar\\navigationbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\updateflower\\updateflower.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\updateflower\\updateflower.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\deleteflower\\deleteflower.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\deleteflower\\deleteflower.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\src\\components\\addflower\\addflower.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\src\\components\\addflower\\addflower.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|c:\\faculta\\sem4\\mpp\\flowersfrontend\\flowersfrontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E69D28D1-524D-4A21-8F91-7D0E0AE8E89B}|FlowersFrontend\\flowersfrontend.esproj|solutionrelative:flowersfrontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\App.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\App.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\App.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\App.tsx",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAEwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T13:55:33.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeleteFlower.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.tsx",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAiwBMAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-07T21:11:56.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddFlower.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\AddFlower\\AddFlower.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\AddFlower\\AddFlower.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\AddFlower\\AddFlower.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\AddFlower\\AddFlower.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-07T20:29:40.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FlowerCard.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\FlowerCard\\FlowerCard.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\FlowerCard\\FlowerCard.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\FlowerCard\\FlowerCard.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\FlowerCard\\FlowerCard.tsx",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-07T20:34:13.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FlowerGrid.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\FlowerGrid\\FlowerGrid.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\FlowerGrid\\FlowerGrid.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\FlowerGrid\\FlowerGrid.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\FlowerGrid\\FlowerGrid.tsx",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAuwAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-07T20:35:30.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeasonChart.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\SeasonChart\\SeasonChart.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\SeasonChart\\SeasonChart.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\SeasonChart\\SeasonChart.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\SeasonChart\\SeasonChart.tsx",
+              "ViewState": "AQIAADUAAAAAAAAAAAAiwEcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-04T13:55:42.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateFlower.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.tsx",
+              "ViewState": "AQIAABkAAAAAAAAAAAAiwBsAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-07T20:35:36.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddFlower.css",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\AddFlower\\AddFlower.css",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\AddFlower\\AddFlower.css",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\AddFlower\\AddFlower.css",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\AddFlower\\AddFlower.css",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-07T21:39:45.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeleteFlower.css",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.css",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.css",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.css",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\DeleteFlower\\DeleteFlower.css",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-08T08:38:35.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\App.css",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\App.css",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\App.css",
+              "RelativeToolTip": "flowersfrontend\\src\\App.css",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-08T08:40:03.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NavigationBar.tsx",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\NavigationBar\\NavigationBar.tsx",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\NavigationBar\\NavigationBar.tsx",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\NavigationBar\\NavigationBar.tsx",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\NavigationBar\\NavigationBar.tsx",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-08T08:40:26.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateFlower.css",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.css",
+              "RelativeDocumentMoniker": "flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.css",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.css",
+              "RelativeToolTip": "flowersfrontend\\src\\components\\UpdateFlower\\UpdateFlower.css",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-08T08:17:53.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\package.json",
+              "RelativeDocumentMoniker": "flowersfrontend\\package.json",
+              "ToolTip": "C:\\faculta\\Sem4\\MPP\\FlowersFrontend\\flowersfrontend\\package.json",
+              "RelativeToolTip": "flowersfrontend\\package.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswBEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-04T13:57:27.366Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
