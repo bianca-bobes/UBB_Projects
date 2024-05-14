@@ -2,6 +2,8 @@ import express from 'express';
 import routes from './routes/routes';
 import path from 'path';
 import cors from 'cors'; // Import the cors middleware
+import FlowerModel from './model/FlowerSchema';
+import mongoose from 'mongoose';
 
 const app = express();
 
@@ -18,7 +20,20 @@ app.use(cors());
 app.use(routes);
 
 const port = process.env.PORT || 1337;
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+
+
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/flowersdb')
+    .then(() => {
+        console.log('Connected to MongoDB');
+        // Start the server after connecting to MongoDB
+        app.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+        });
+    })
+    .catch((error) => {
+        console.error('Error connecting to MongoDB:', error);
+    });
+
+
 export default app;
