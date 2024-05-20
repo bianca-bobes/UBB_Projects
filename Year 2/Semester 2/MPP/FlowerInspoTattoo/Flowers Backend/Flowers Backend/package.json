@@ -33,5 +33,11 @@
     "plugins": [
       "@typescript-eslint"
     ]
+  },
+  "dependencies": {
+    "@types/mongodb": "^4.0.7",
+    "faker": "^5.5.3",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.1"
   }
 }
