@@ -4,7 +4,7 @@ import path from 'path';
 import faker from 'faker'; // Import Faker library
 import mongoose from 'mongoose';
 import FlowerModel from '../model/FlowerSchema';
-import jwt from 'jsonwebtoken';
+import * as jwt from 'jsonwebtoken';
 import User from '../model/User';
 
 const router = Router();
