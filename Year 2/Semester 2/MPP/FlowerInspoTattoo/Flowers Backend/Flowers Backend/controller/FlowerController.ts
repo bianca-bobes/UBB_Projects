@@ -5,11 +5,9 @@ import faker from 'faker';
 import mongoose from 'mongoose';
 import FlowerModel from '../model/FlowerSchema';
 import User from '../model/User';
-import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
 const router = Router();
-
 
 declare module 'express-serve-static-core' {
     interface Request {
@@ -65,8 +63,6 @@ export const authenticateToken = (req: Request, res: Response, next: NextFunctio
         return res.sendStatus(403); // Forbidden
     }
 };
-
-
 
 router.get('/', authenticateToken, async (req: Request, res: Response) => {
     try {
@@ -163,15 +159,14 @@ router.delete('/:popular_name', authenticateToken, async (req: Request, res: Res
 router.post('/register', async (req: Request, res: Response) => {
     const { username, password } = req.body;
     try {
-        const hashedPassword = await bcrypt.hash(password, 10);
-        const user = new User({ username, password: hashedPassword });
+        // Note: Removing hashing here for testing purposes
+        const user = new User({ username, password });
         await user.save();
         res.status(201).json({ message: 'Registration successful' });
     } catch (error) {
         res.status(400).json({ error: error.message });
     }
 });
-
 
 router.post('/login', async (req: Request, res: Response) => {
     const { username, password } = req.body;
@@ -183,9 +178,8 @@ router.post('/login', async (req: Request, res: Response) => {
             return res.status(401).json({ message: 'Invalid username or password' });
         }
 
-        // Compare passwords using matchPassword method
-        const isMatch = await user.matchPassword(password);
-        if (!isMatch) {
+        // Direct comparison of passwords (not recommended for production)
+        if (user.password !== password) {
             return res.status(401).json({ message: 'Invalid username or password' });
         }
 
@@ -198,7 +192,5 @@ router.post('/login', async (req: Request, res: Response) => {
         res.status(500).json({ message: error.message });
     }
 });
-
-
 
 export default router;

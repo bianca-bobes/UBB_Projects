@@ -19,7 +19,6 @@ const path_1 = __importDefault(require("path"));
 const faker_1 = __importDefault(require("faker"));
 const FlowerSchema_1 = __importDefault(require("../model/FlowerSchema"));
 const User_1 = __importDefault(require("../model/User"));
-const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const router = (0, express_1.Router)();
 function generateFakeFlowers(count) {
@@ -139,11 +138,10 @@ router.delete('/:popular_name', exports.authenticateToken, (req, res) => __await
 router.post('/register', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { username, password } = req.body;
     try {
-        const hashedPassword = yield bcryptjs_1.default.hash(password, 10);
-        const user = new User_1.default({ username, password: hashedPassword });
+        // Note: Removing hashing here for testing purposes
+        const user = new User_1.default({ username, password });
         yield user.save();
-        const token = jsonwebtoken_1.default.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
-        res.status(201).json({ token });
+        res.status(201).json({ message: 'Registration successful' });
     }
     catch (error) {
         res.status(400).json({ error: error.message });
@@ -152,17 +150,22 @@ router.post('/register', (req, res) => __awaiter(void 0, void 0, void 0, functio
 router.post('/login', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { username, password } = req.body;
     try {
+        // Find the user by username
         const user = yield User_1.default.findOne({ username });
-        if (user && (yield bcryptjs_1.default.compare(password, user.password))) {
-            const token = jsonwebtoken_1.default.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
-            res.json({ token });
+        if (!user) {
+            return res.status(401).json({ message: 'Invalid username or password' });
         }
-        else {
-            res.status(400).json({ error: 'Invalid credentials' });
+        // Direct comparison of passwords (not recommended for production)
+        if (user.password !== password) {
+            return res.status(401).json({ message: 'Invalid username or password' });
         }
+        // Generate JWT token
+        const token = jsonwebtoken_1.default.sign({ userId: user._id }, 'flori', { expiresIn: '1h' });
+        // Send the token in the response
+        res.status(200).json({ token });
     }
     catch (error) {
-        res.status(400).json({ error: error.message });
+        res.status(500).json({ message: error.message });
     }
 }));
 exports.default = router;
