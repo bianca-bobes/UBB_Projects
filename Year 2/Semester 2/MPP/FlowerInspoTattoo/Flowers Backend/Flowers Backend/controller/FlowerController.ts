@@ -176,16 +176,29 @@ router.post('/register', async (req: Request, res: Response) => {
 router.post('/login', async (req: Request, res: Response) => {
     const { username, password } = req.body;
     try {
+        console.log('Attempting to log in with username:', username);
         const user = await User.findOne({ username });
-        if (user && await bcrypt.compare(password, user.password)) {
-            const token = jwt.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
-            res.json({ token });
-        } else {
-            res.status(400).json({ error: 'Invalid credentials' });
+        if (!user) {
+            console.log('User not found:', username);
+            return res.status(400).json({ error: 'Invalid credentials' });
         }
+        console.log('User found. Checking password...');
+
+        const isMatch = await user.matchPassword(password);
+        if (!isMatch) {
+            console.log('Incorrect password for user:', username);
+            return res.status(400).json({ error: 'Invalid credentials' });
+        }
+
+        console.log('Password matched. Generating token...');
+        const token = jwt.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
+        console.log('Token generated successfully:', token);
+        res.json({ token });
     } catch (error) {
-        res.status(400).json({ error: error.message });
+        console.error('Error logging in:', error);
+        res.status(500).json({ error: 'Internal server error' });
     }
 });
+
 
 export default router;
