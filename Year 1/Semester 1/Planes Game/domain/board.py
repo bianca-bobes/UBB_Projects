@@ -34,7 +34,6 @@ class Board:
 
     @property
     def number_of_planes(self):
-        # Getter function for number_of_planes although i dont use this
         return self._number_of_planes
 
     def get_hit(self, x, y):
@@ -285,4 +284,8 @@ class PlayerBoard(Board):
             for itm in self._planes[item]:
                 x, y = itm[0], itm[1]
                 self._data[x][y] = 'A'
+
+
+
+
 

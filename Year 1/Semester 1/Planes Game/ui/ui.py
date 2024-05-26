@@ -1,3 +1,6 @@
+import random
+
+
 class UI:
     def __init__(self, player, computer):
         self.__player = player
@@ -39,6 +42,8 @@ class UI:
             print(self.__player.board)
             ok = 0
 
+
+
     def request_hit(self):
         coords = input("Please enter the coordinates that you want to hit: ")
         coords = list(coords.strip().upper())
@@ -51,13 +56,23 @@ class UI:
         else:
             raise ValueError("Wrong coordinates!")
 
-        return self.__computer.get_hit(x, y-1)
+        return self.__computer.get_hit(x, y - 1)
+
+
 
     def start(self):
         self.print_message()
         print("Player Board:")
         print(self.__player.board)
-        self.request_planes()
+        choice = input("Do you want to place random planes on the board? (yes/no): ").strip().lower()
+        if choice == "yes":
+            self.__player.generate_planes()
+        elif choice == "no":
+            self.request_planes()
+            """please say yes or no"""
+        elif choice != "no" and choice != "yes":
+            raise ValueError("Please say yes or no")
+
 
         print("The computer has placed his own planes! Let the game begin!")
         self.__computer.generate_planes()
@@ -66,7 +81,6 @@ class UI:
         computer_points = 0
 
         cells = []
-        queue = []
 
         while True:
             try:
@@ -79,8 +93,7 @@ class UI:
                 else:
                     print("Nothing.")
 
-                x, y = self.__computer.move(self.__computer.board.size - 1, 0, self.__computer.board.size - 1, 0, cells,
-                                            queue)
+                x, y = self.__computer.move(self.__computer.board.size - 1, 0, self.__computer.board.size - 1, 0, cells)
                 move = self.__player.get_hit(x, y)
                 if move == 1:
                     computer_points += 1
@@ -103,3 +116,34 @@ class UI:
             if computer_points == self.__player.board.number_of_planes:
                 print("You lost!")
                 return
+
+
+""""
+    def start(self):
+        self.print_message()
+        print("Player Board:")
+        print(self.__player.board)
+        # if the player said no to random planes, he will have to place them himself
+        choice = input("Do you want to place random planes on the board? (yes/no): ").strip().lower()
+        if choice == "yes":
+            self.__player.generate_planes()
+        else:
+            self.request_planes()
+
+        print("The computer has placed his own planes! Let the game begin!")
+        self.__computer.generate_planes()
+
+        while True:
+            self.request_hit()
+
+            x, y = self.__computer.board.get_random_cell()
+            result = self.__computer.get_hit(x, y)
+            if result == 1:
+                print("Computer has crashed one of your planes!")
+            elif result == 0:
+                print("Computer has hit one of your planes!")
+            else:
+                print("Computer has hit nothing.")
+
+            # There is no need to check if the game is over
+"""

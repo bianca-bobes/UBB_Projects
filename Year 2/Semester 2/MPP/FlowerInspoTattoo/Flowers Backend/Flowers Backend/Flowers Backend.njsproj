@@ -60,7 +60,7 @@
     <TypeScriptCompile Include="controller\StyleController.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="custom.d.ts">
+    <TypeScriptCompile Include="jsonwebtoken.d.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="model\Flower.ts">

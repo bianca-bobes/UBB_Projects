@@ -1,34 +1,40 @@
 import express, { Request, Response, Router, NextFunction } from 'express';
 import { Flower } from '../model/Flower';
 import path from 'path';
-import faker from 'faker'; // Import Faker library
+import faker from 'faker';
 import mongoose from 'mongoose';
 import FlowerModel from '../model/FlowerSchema';
-import * as jwt from 'jsonwebtoken';
 import User from '../model/User';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
 const router = Router();
 
-// Function to generate fake flower data
+
+declare module 'express-serve-static-core' {
+    interface Request {
+        user?: jwt.JwtPayload // Using the JwtPayload type from jsonwebtoken
+    }
+}
+
 function generateFakeFlowers(count: number): Flower[] {
     const seasons = ['Spring', 'Summer', 'Autumn', 'Winter'];
     const fakeFlowers: Flower[] = [];
     for (let i = 0; i < count; i++) {
-        const randomSeasonIndex = faker.random.number({ min: 0, max: 3 });
+        const randomSeasonIndex = faker.datatype.number({ min: 0, max: 3 });
         fakeFlowers.push(new Flower(
-            i + 10, // Start IDs from 10
-            faker.random.word(), // Generate a fake popular name
-            faker.lorem.words(), // Generate a fake Latin name
-            faker.lorem.words(), // Generate a fake symbolic meaning
-            faker.internet.color(), // Generate a fake color
-            seasons[randomSeasonIndex], // Select a random season from predefined options
-            faker.random.boolean() // Generate a random visibility status
+            i + 10,
+            faker.random.word(),
+            faker.lorem.words(),
+            faker.lorem.words(),
+            faker.internet.color(),
+            seasons[randomSeasonIndex],
+            faker.datatype.boolean()
         ));
     }
     return fakeFlowers;
 }
 
-// Generate fake flower data when the server starts
 const initialFlowers: Flower[] = [
     new Flower(1, "Poppy", "Papaver somniferum", "Dreams, Rest, Calmness", "Red", "Spring", true),
     new Flower(2, "Tulip", "Tulipa", "Love, Elegance, Grace", "Purple", "Spring", true),
@@ -41,8 +47,8 @@ const initialFlowers: Flower[] = [
     new Flower(9, "Lilac", "Syringa vulgaris", "Innocence, Youthfulness, Spirituality, Tranquility", "Purple", "Spring", true)
 ];
 
-let flowers: Flower[] = [...initialFlowers, ...generateFakeFlowers(5)]; // Generate 5 additional fake flowers initially
-// Authentication middleware
+let flowers: Flower[] = [...initialFlowers, ...generateFakeFlowers(5)];
+
 export const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
@@ -51,17 +57,18 @@ export const authenticateToken = (req: Request, res: Response, next: NextFunctio
         return res.sendStatus(401); // Unauthorized
     }
 
-    jwt.verify(token, 'flori', (err: any, user: any) => {
-        if (err) {
-            return res.sendStatus(403); // Forbidden
-        }
-        req.user = user; // Attach user to the request
+    try {
+        const decoded = jwt.verify(token, 'flori') as jwt.JwtPayload;
+        req.user = decoded; // Assuming decoded contains the user payload
         next();
-    });
+    } catch (error) {
+        return res.sendStatus(403); // Forbidden
+    }
 };
-// Routes
 
-router.get('/', authenticateToken ,async (req: Request, res: Response) => {
+
+
+router.get('/', authenticateToken, async (req: Request, res: Response) => {
     try {
         const flowers = await FlowerModel.find();
         res.json(flowers);
@@ -76,7 +83,7 @@ router.get('/images/:popular_name', authenticateToken, (req: Request, res: Respo
     res.sendFile(imagePath);
 });
 
-router.get('/visible', authenticateToken,async (req: Request, res: Response) => {
+router.get('/visible', authenticateToken, async (req: Request, res: Response) => {
     try {
         const visibleFlowers = await FlowerModel.find({ is_visible: true });
         res.json(visibleFlowers);
@@ -98,7 +105,6 @@ router.get('/:popular_name', authenticateToken, async (req: Request, res: Respon
     }
 });
 
-// Apply authentication middleware to the routes that modify data
 router.post('/', authenticateToken, async (req: Request, res: Response) => {
     const { popular_name, latin_name, symbolic_meaning, color, season, is_visible } = req.body;
 
@@ -154,11 +160,11 @@ router.delete('/:popular_name', authenticateToken, async (req: Request, res: Res
     }
 });
 
-// User registration and login routes
 router.post('/register', async (req: Request, res: Response) => {
     const { username, password } = req.body;
     try {
-        const user = new User({ username, password });
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const user = new User({ username, password: hashedPassword });
         await user.save();
         const token = jwt.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
         res.status(201).json({ token });
@@ -171,7 +177,7 @@ router.post('/login', async (req: Request, res: Response) => {
     const { username, password } = req.body;
     try {
         const user = await User.findOne({ username });
-        if (user && await user.matchPassword(password)) {
+        if (user && await bcrypt.compare(password, user.password)) {
             const token = jwt.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
             res.json({ token });
         } else {

@@ -6,9 +6,10 @@ from ui.ui import UI
 difficulty_dict = {
     "easy": 0,
     "normal": 1,
+    "hard": 2
 }
 
-difficulty = input("Please enter the difficulty of the game(easy/normal): ")
+difficulty = input("Please enter the difficulty of the game(easy/normal/hard): ")
 difficulty = difficulty.lower()
 
 if difficulty.strip() not in difficulty_dict:

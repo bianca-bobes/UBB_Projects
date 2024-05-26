@@ -1,3 +1,6 @@
 C:\faculta\Sem4\MPP\Flowers Backend\Flowers Backend\obj\Debug\Flowers Backend.njsproj.AssemblyReference.cache
 C:\faculta\Sem4\MPP\Flowers Backend\Flowers Backend\obj\Debug\Flowers Backend.njsproj.CoreCompileInputs.cache
 C:\faculta\Sem4\MPP\Flowers Backend\Flowers Backend\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\biabo\Desktop\UBB_Projects\Year 2\Semester 2\MPP\FlowerInspoTattoo\Flowers Backend\Flowers Backend\obj\Debug\Flowers Backend.njsproj.AssemblyReference.cache
+C:\Users\biabo\Desktop\UBB_Projects\Year 2\Semester 2\MPP\FlowerInspoTattoo\Flowers Backend\Flowers Backend\obj\Debug\Flowers Backend.njsproj.CoreCompileInputs.cache
+C:\Users\biabo\Desktop\UBB_Projects\Year 2\Semester 2\MPP\FlowerInspoTattoo\Flowers Backend\Flowers Backend\bin\Microsoft.NodejsTools.WebRole.dll
