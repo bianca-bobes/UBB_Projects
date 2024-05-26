@@ -175,30 +175,30 @@ router.post('/register', async (req: Request, res: Response) => {
 
 router.post('/login', async (req: Request, res: Response) => {
     const { username, password } = req.body;
+
     try {
-        console.log('Attempting to log in with username:', username);
+        // Find the user by username
         const user = await User.findOne({ username });
         if (!user) {
-            console.log('User not found:', username);
-            return res.status(400).json({ error: 'Invalid credentials' });
+            return res.status(401).json({ message: 'Invalid username or password' });
         }
-        console.log('User found. Checking password...');
 
+        // Compare passwords using matchPassword method
         const isMatch = await user.matchPassword(password);
         if (!isMatch) {
-            console.log('Incorrect password for user:', username);
-            return res.status(400).json({ error: 'Invalid credentials' });
+            return res.status(401).json({ message: 'Invalid username or password' });
         }
 
-        console.log('Password matched. Generating token...');
-        const token = jwt.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
-        console.log('Token generated successfully:', token);
-        res.json({ token });
+        // Generate JWT token
+        const token = jwt.sign({ userId: user._id }, 'flori', { expiresIn: '1h' });
+
+        // Send the token in the response
+        res.status(200).json({ token });
     } catch (error) {
-        console.error('Error logging in:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ message: error.message });
     }
 });
+
 
 
 export default router;
