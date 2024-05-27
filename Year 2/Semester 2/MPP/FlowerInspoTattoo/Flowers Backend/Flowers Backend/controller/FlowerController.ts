@@ -11,7 +11,7 @@ const router = Router();
 
 declare module 'express-serve-static-core' {
     interface Request {
-        user?: jwt.JwtPayload // Using the JwtPayload type from jsonwebtoken
+        user?: jwt.JwtPayload 
     }
 }
 
@@ -52,15 +52,15 @@ export const authenticateToken = (req: Request, res: Response, next: NextFunctio
     const token = authHeader && authHeader.split(' ')[1];
 
     if (!token) {
-        return res.sendStatus(401); // Unauthorized
+        return res.sendStatus(401); 
     }
 
     try {
         const decoded = jwt.verify(token, 'flori') as jwt.JwtPayload;
-        req.user = decoded; // Assuming decoded contains the user payload
+        req.user = decoded; 
         next();
     } catch (error) {
-        return res.sendStatus(403); // Forbidden
+        return res.sendStatus(403);
     }
 };
 
@@ -176,20 +176,24 @@ router.post('/login', async (req: Request, res: Response) => {
         const user = await User.findOne({ username });
         if (!user) {
             return res.status(401).json({ message: 'Invalid username or password' });
+            console.log('Invalid username or password');
         }
 
         // Direct comparison of passwords (not recommended for production)
         if (user.password !== password) {
             return res.status(401).json({ message: 'Invalid username or password' });
+            console.log('Invalid username or password');
         }
 
         // Generate JWT token
         const token = jwt.sign({ userId: user._id }, 'flori', { expiresIn: '1h' });
+        console.log(token);
 
         // Send the token in the response
         res.status(200).json({ token });
     } catch (error) {
         res.status(500).json({ message: error.message });
+        console.log(error.message);
     }
 });
 
