@@ -6,15 +6,25 @@ import mongoose from 'mongoose';
 import FlowerModel from '../model/FlowerSchema';
 import User from '../model/User';
 import jwt from 'jsonwebtoken';
+import bcrypt from 'bcrypt';
 
 const router = Router();
 
-declare module 'express-serve-static-core' {
-    interface Request {
-        user?: jwt.JwtPayload 
+// Define JwtPayload interface
+interface JwtPayload {
+    id: string;
+}
+
+// Extend Request interface in Express namespace
+declare global {
+    namespace Express {
+        interface Request {
+            user?: JwtPayload;
+        }
     }
 }
 
+// Generate fake flowers function
 function generateFakeFlowers(count: number): Flower[] {
     const seasons = ['Spring', 'Summer', 'Autumn', 'Winter'];
     const fakeFlowers: Flower[] = [];
@@ -33,6 +43,7 @@ function generateFakeFlowers(count: number): Flower[] {
     return fakeFlowers;
 }
 
+// Initial flowers data
 const initialFlowers: Flower[] = [
     new Flower(1, "Poppy", "Papaver somniferum", "Dreams, Rest, Calmness", "Red", "Spring", true),
     new Flower(2, "Tulip", "Tulipa", "Love, Elegance, Grace", "Purple", "Spring", true),
@@ -45,25 +56,28 @@ const initialFlowers: Flower[] = [
     new Flower(9, "Lilac", "Syringa vulgaris", "Innocence, Youthfulness, Spirituality, Tranquility", "Purple", "Spring", true)
 ];
 
+// Combine initial flowers with fake flowers
 let flowers: Flower[] = [...initialFlowers, ...generateFakeFlowers(5)];
 
-export const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
+// Authenticate token middleware
+const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
 
     if (!token) {
-        return res.sendStatus(401); 
+        return res.sendStatus(401);
     }
 
-    try {
-        const decoded = jwt.verify(token, 'flori') as jwt.JwtPayload;
-        req.user = decoded; 
+    jwt.verify(token, 'flori', (err, decoded) => {
+        if (err) {
+            return res.sendStatus(403);
+        }
+        req.user = decoded as JwtPayload;
         next();
-    } catch (error) {
-        return res.sendStatus(403);
-    }
+    });
 };
 
+// Define routes
 router.get('/', authenticateToken, async (req: Request, res: Response) => {
     try {
         const flowers = await FlowerModel.find();
@@ -159,10 +173,11 @@ router.delete('/:popular_name', authenticateToken, async (req: Request, res: Res
 router.post('/register', async (req: Request, res: Response) => {
     const { username, password } = req.body;
     try {
-        // Note: Removing hashing here for testing purposes
-        const user = new User({ username, password });
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const user = new User({ username, password: hashedPassword });
         await user.save();
-        res.status(201).json({ message: 'Registration successful' });
+        const token = jwt.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
+        res.status(201).json({ token });
     } catch (error) {
         res.status(400).json({ error: error.message });
     }
@@ -170,30 +185,16 @@ router.post('/register', async (req: Request, res: Response) => {
 
 router.post('/login', async (req: Request, res: Response) => {
     const { username, password } = req.body;
-
     try {
-        // Find the user by username
         const user = await User.findOne({ username });
-        if (!user) {
-            return res.status(401).json({ message: 'Invalid username or password' });
-            console.log('Invalid username or password');
+        if (user && await bcrypt.compare(password, user.password)) {
+            const token = jwt.sign({ id: user._id }, 'flori', { expiresIn: '1h' });
+            res.json({ token });
+        } else {
+            res.status(400).json({ error: 'Invalid credentials' });
         }
-
-        // Direct comparison of passwords (not recommended for production)
-        if (user.password !== password) {
-            return res.status(401).json({ message: 'Invalid username or password' });
-            console.log('Invalid username or password');
-        }
-
-        // Generate JWT token
-        const token = jwt.sign({ userId: user._id }, 'flori', { expiresIn: '1h' });
-        console.log(token);
-
-        // Send the token in the response
-        res.status(200).json({ token });
     } catch (error) {
-        res.status(500).json({ message: error.message });
-        console.log(error.message);
+        res.status(400).json({ error: error.message });
     }
 });
 
