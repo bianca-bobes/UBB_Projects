@@ -18,7 +18,7 @@ const PieChart = ({ flowers }: { flowers: Flower[] }) => {
     const renderChart = () => {
         const seasonDistribution: { [key: string]: number } = {};
         flowers.forEach(flower => {
-            seasonDistribution[flower._season] = (seasonDistribution[flower._season] || 0) + 1;
+            seasonDistribution[flower.season] = (seasonDistribution[flower.season] || 0) + 1;
         });
 
         const labels = Object.keys(seasonDistribution);

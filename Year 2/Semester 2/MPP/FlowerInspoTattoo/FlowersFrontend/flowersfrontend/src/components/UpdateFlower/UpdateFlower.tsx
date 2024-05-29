@@ -25,7 +25,7 @@ const UpdateFlower: React.FC<UpdateFlowerProps> = ({ onUpdate }) => {
             return;
         }
         try {
-            const response = await axios.put(`http://localhost:1337/flowers/${popularName}`, {
+            const response = await axios.put(`https://ubb-projects.onrender.com/flowers/${popularName}`, {
                 latin_name: latinName,
                 symbolic_meaning: symbolicMeaning,
                 color: color,

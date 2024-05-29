@@ -17,7 +17,7 @@ const DeleteFlower: React.FC<DeleteFlowerProps> = ({ onDelete }) => {
             return;
         }
         try {
-            const response = await axios.delete(`http://localhost:1337/flowers/${popularName}`);
+            const response = await axios.delete(`https://ubb-projects.onrender.com/flowers/${popularName}`);
             onDelete(popularName);
             setPopularName('');
             setShowForm(false);

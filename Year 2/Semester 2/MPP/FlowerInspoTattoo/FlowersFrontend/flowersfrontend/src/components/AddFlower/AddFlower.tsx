@@ -27,7 +27,7 @@ const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
         }
         try {
             // Make the API call to add a flower
-            const response = await axios.post('http://localhost:1337/flowers', {
+            const response = await axios.post('https://ubb-projects.onrender.com/flowers', {
                 popular_name: popularName,
                 latin_name: latinName,
                 symbolic_meaning: symbolicMeaning,
