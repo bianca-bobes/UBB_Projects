@@ -24,6 +24,11 @@ function MainApp() {
     useEffect(() => {
         const fetchFlowers = async () => {
             const token = localStorage.getItem('flori');
+            if (!token) {
+                console.error('No token found');
+                return;
+            }
+
             try {
                 const response = await axios.get('https://ubb-projects.onrender.com/flowers/visible', {
                     headers: {
@@ -63,6 +68,11 @@ function MainApp() {
 
     const handleAddFlower = async () => {
         const token = localStorage.getItem('flori');
+        if (!token) {
+            console.error('No token found');
+            return;
+        }
+
         try {
             const updatedFlowers = await axios.get('https://ubb-projects.onrender.com/flowers/visible', {
                 headers: {
@@ -80,6 +90,11 @@ function MainApp() {
 
     const handleDeleteFlower = async () => {
         const token = localStorage.getItem('flori');
+        if (!token) {
+            console.error('No token found');
+            return;
+        }
+
         try {
             const updatedFlowers = await axios.get('https://ubb-projects.onrender.com/flowers/visible', {
                 headers: {
@@ -97,6 +112,11 @@ function MainApp() {
 
     const handleUpdateFlower = async () => {
         const token = localStorage.getItem('flori');
+        if (!token) {
+            console.error('No token found');
+            return;
+        }
+
         try {
             const updatedFlowers = await axios.get('https://ubb-projects.onrender.com/flowers/visible', {
                 headers: {
@@ -116,7 +136,7 @@ function MainApp() {
         const newSortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
         setSortDirection(newSortDirection);
 
-        const sortedFlowers = [...flowers].sort((a, b) => {
+        const sortedFlowers = [...allFlowers].sort((a, b) => {
             if (newSortDirection === 'asc') {
                 return a.popular_name.localeCompare(b.popular_name);
             } else {
@@ -124,7 +144,7 @@ function MainApp() {
             }
         });
         setAllFlowers(sortedFlowers);
-        setCurrentPage(1);
+        updateFlowers(1, sortedFlowers);
     };
 
     useEffect(() => {

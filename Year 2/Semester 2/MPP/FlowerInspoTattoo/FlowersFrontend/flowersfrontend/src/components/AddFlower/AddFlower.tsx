@@ -3,7 +3,7 @@ import axios from 'axios';
 import './AddFlower.css';
 
 interface AddFlowerProps {
-    onAdd: (popularName: string, latinName: string, symbolicMeaning: string, color: string, season: string) => void;
+    onAdd: () => void;
 }
 
 const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
@@ -16,7 +16,6 @@ const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Validate form fields
         if (!popularName || !latinName || !symbolicMeaning || !color || !season) {
             alert('Please fill out all fields.');
             return;
@@ -26,33 +25,32 @@ const AddFlower: React.FC<AddFlowerProps> = ({ onAdd }) => {
             return;
         }
         try {
-            // Make the API call to add a flower
+            const token = localStorage.getItem('flori');
             const response = await axios.post('https://ubb-projects.onrender.com/flowers', {
                 popular_name: popularName,
                 latin_name: latinName,
                 symbolic_meaning: symbolicMeaning,
                 color: color,
                 season: season,
-                is_visible: true // Assuming this is the correct key name for the visibility property
+                is_visible: true
+            }, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
             });
-            // Call the onAdd function passed from the parent component
-            onAdd(popularName, latinName, symbolicMeaning, color, season);
-            // Clear form fields after successful submission
+            onAdd();
             setPopularName('');
             setLatinName('');
             setSymbolicMeaning('');
             setColor('');
             setSeason('');
-            // Hide the form after successful submission
             setShowForm(false);
             console.log('Flower added successfully:', response.data);
         } catch (error) {
             console.error('Error adding flower:', error);
-            // Handle error cases here, such as displaying an error message to the user
             alert('Error adding flower. Please try again.');
         }
     };
-
 
     const toggleFormVisibility = () => {
         setShowForm(!showForm);

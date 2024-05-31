@@ -3,7 +3,7 @@ import axios from 'axios';
 import './DeleteFlower.css';
 
 interface DeleteFlowerProps {
-    onDelete: (popularName: string) => void;
+    onDelete: () => void;
 }
 
 const DeleteFlower: React.FC<DeleteFlowerProps> = ({ onDelete }) => {
@@ -17,8 +17,13 @@ const DeleteFlower: React.FC<DeleteFlowerProps> = ({ onDelete }) => {
             return;
         }
         try {
-            const response = await axios.delete(`https://ubb-projects.onrender.com/flowers/${popularName}`);
-            onDelete(popularName);
+            const token = localStorage.getItem('flori');
+            const response = await axios.delete(`https://ubb-projects.onrender.com/flowers/${popularName}`, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            onDelete();
             setPopularName('');
             setShowForm(false);
             console.log('Flower deleted successfully:', response.data);

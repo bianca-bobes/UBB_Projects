@@ -3,7 +3,7 @@ import axios from 'axios';
 import './UpdateFlower.css';
 
 interface UpdateFlowerProps {
-    onUpdate: (popularName: string, latinName: string, symbolicMeaning: string, color: string, season: string) => void;
+    onUpdate: () => void;
 }
 
 const UpdateFlower: React.FC<UpdateFlowerProps> = ({ onUpdate }) => {
@@ -25,14 +25,19 @@ const UpdateFlower: React.FC<UpdateFlowerProps> = ({ onUpdate }) => {
             return;
         }
         try {
+            const token = localStorage.getItem('flori');
             const response = await axios.put(`https://ubb-projects.onrender.com/flowers/${popularName}`, {
                 latin_name: latinName,
                 symbolic_meaning: symbolicMeaning,
                 color: color,
                 season: season,
                 is_visible: true
+            }, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
             });
-            onUpdate(popularName, latinName, symbolicMeaning, color, season);
+            onUpdate();
             setPopularName('');
             setLatinName('');
             setSymbolicMeaning('');

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './FlowerCard.css';
-import axios from 'axios'; // Import Axios and AxiosError
+import axios from 'axios';
 import { Flower } from '../../../../../Flowers Backend/Flowers Backend/model/Flower';
-import emptyImage from '../../../../../Flowers Backend/Flowers Backend/images/empty.png'; // Fix typo in the import path
+import emptyImage from '../../../../../Flowers Backend/Flowers Backend/images/empty.png';
 
 interface FlowerCardProps {
     flower: Flower;
@@ -18,7 +18,7 @@ const FlowerCard: React.FC<FlowerCardProps> = ({ flower }) => {
                     console.log('Fetching image for flower:', flower.popular_name);
 
                     // Get the token from localStorage
-                    const token = localStorage.getItem('token');
+                    const token = localStorage.getItem('flori');
 
                     const response = await axios.get(`https://ubb-projects.onrender.com/flowers/images/${flower.popular_name}`, {
                         responseType: 'blob',
@@ -31,10 +31,14 @@ const FlowerCard: React.FC<FlowerCardProps> = ({ flower }) => {
                 }
             } catch (error) {
                 console.error('Error fetching flower image:', error);
-                if (axios.isAxiosError(error) && error.response?.status === 404) {
-                    setImageUrl('https://ubb-projects.onrender.com/flowers/images/empty');
+                if (axios.isAxiosError(error)) {
+                    if (error.response?.status === 404) {
+                        setImageUrl(emptyImage);
+                    } else {
+                        console.error('Unexpected error:', error.message);
+                    }
                 } else {
-                    // Handle other errors
+                    console.error('Non-Axios error:', error);
                 }
             }
         };

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 import { Flower } from '../../../../../Flowers Backend/Flowers Backend/model/Flower';
-import React from 'react';
+
 
 const PieChart = ({ flowers }: { flowers: Flower[] }) => {
     const chartRef = useRef<HTMLCanvasElement | null>(null);
